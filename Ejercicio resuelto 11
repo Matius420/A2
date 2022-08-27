@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        float A;
+        float B;
+        float C;
+        Scanner ent1 = new Scanner(System.in);
+        System.out.println("Ingrese el primer numero: ");
+        A = ent1.nextFloat();
+        Scanner ent2 = new Scanner(System.in);
+        System.out.println("Ingrese el segundo numero: ");
+        B = ent2.nextFloat();
+        Scanner ent3 = new Scanner(System.in);
+        System.out.println("Ingrese el tercer numero: ");
+        C = ent3.nextFloat();
+        if (A > B && A > C) System.out.println("El mayor es " + A);
+        if (B > A && B > C) System.out.println("El mayor es " + B);
+        if (C > A && C > B) System.out.println("El mayor es " + C);
+    }
+}
