@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        float A;
+        float B;
+        float X;
+        Scanner ent1 = new Scanner(System.in);
+        System.out.println("Ingrese el primer numero (A): ");
+        A = ent1.nextFloat();
+        Scanner ent2 = new Scanner(System.in);
+        System.out.println("Ingrese el segundo numero (B): ");
+        B = ent2.nextFloat();
+        X = A - B;
+        if (X > 0) System.out.println("A es mayor que B");
+        if (X < 0) System.out.println("A es menor que B");
+        if (X == 0) System.out.println("Ambos son iguales");
+       
+    }
+}
