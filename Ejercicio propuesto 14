@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int dep1;
+        int dep2;
+        int dep3;
+        int salario;
+        int salario_t;
+        Scanner ent1 = new Scanner(System.in);
+        System.out.println("Ingrese el porcentaje del departamento uno: ");
+        dep1 = ent1.nextInt();
+        Scanner ent2 = new Scanner(System.in);
+        System.out.println("Ingrese el porcentaje del departamento dos: ");
+        dep2 = ent2.nextInt();
+        Scanner ent3 = new Scanner(System.in);
+        System.out.println("Ingrese el porcentaje del departamento tres: ");
+        dep3 = ent3.nextInt();
+        Scanner ent4 = new Scanner(System.in);
+        System.out.println("Ingrese el valor del salario: ");
+        salario = ent4.nextInt();
+        salario_t = salario + salario * 1/5;
+        if (dep1 > 33) System.out.println("El salario de los empleados del departamento uno es:" + salario_t);
+        if (dep2 > 33) System.out.println("El salario de los empleados del departamento dos es:" + salario_t);
+        if (dep3 > 33) System.out.println("El salario de los empleados del departamento tres es:" + salario_t);
+    }
+}
