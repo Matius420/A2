@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String nombres;
+        int horas;
+        float valor_hora;
+        float salario;
+        Scanner ent1 = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del empleado: ");
+        nombres = ent1.nextLine();
+        Scanner ent2 = new Scanner(System.in);
+        System.out.println("Horas trabajadas: ");
+        horas = ent2.nextInt();
+        Scanner ent3 = new Scanner(System.in);
+        System.out.println("Ingrese el valor de la hora trabajada: ");
+        valor_hora = ent3.nextInt();
+        salario = horas * valor_hora;
+        if (salario > 450.000) System.out.print("Nombre del empleado: " + nombres + ". Salario mensual: " + salario);
+        if (salario <= 450.000) System.out.print("Nombre del empleado: " + nombres);
+    }
+}
