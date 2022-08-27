@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int inscripcion;
+        String nombres;
+        float patrimonio;
+        int estrato;
+        float valor;
+        int cincuenta;
+        cincuenta = 50000;
+        Scanner ent1 = new Scanner(System.in);
+        System.out.println("Ingrese el numero de inscripcion: ");
+        inscripcion = ent1.nextInt();
+        Scanner ent2 = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del estudiante: ");
+        nombres = ent2.nextLine();
+        Scanner ent3 = new Scanner(System.in);
+        System.out.println("Ingrese el patrimonio del estudiante: ");
+        patrimonio = ent3.nextFloat();
+        Scanner ent4 = new Scanner(System.in);
+        System.out.println("Ingrese el estrato social: ");
+        estrato = ent4.nextInt();
+        if (patrimonio > 2000000 && estrato > 3) {
+            valor = cincuenta + (patrimonio*(3/100));
+        } else {
+            valor = cincuenta;
+        }
+        System.out.println("Inscripcion numero: " + inscripcion);
+        System.out.println("Nombres del estudiante: " + nombres);
+        System.out.println("Valor de matricula: " + valor);
+    }
+}
