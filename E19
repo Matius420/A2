@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        float X;
+        float perimetro;
+        double area;
+        Scanner ent1 = new Scanner(System.in);
+        System.out.println("Ingrese la medida del lado: ");
+        X = ent1.nextFloat();
+        perimetro = X * 3;
+        area = (Math.sqrt(3)/4) * (X*X);
+        System.out.println("El perimetro del trangulo equilatero es: " + perimetro);
+        System.out.println("El area del traingulo equilatero es: " + area);
+    }
+}
