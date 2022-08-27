@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        float esf1;
+        float esf2;
+        float esf3;
+        Scanner ent1 = new Scanner(System.in);
+        System.out.println("Ingrese el peso de la esfera 1: ");
+        esf1 = ent1.nextFloat();
+        Scanner ent2 = new Scanner(System.in);
+        System.out.println("Ingrese el peso de la esfera 2: ");
+        esf2 = ent2.nextFloat();
+        Scanner ent3 = new Scanner(System.in);
+        System.out.println("Ingrese el peso de la esfera 3: ");
+        esf3 = ent3.nextFloat();
+        if (esf1 > esf2 && esf1 > esf3) System.out.println("La mas pesada es la esfera 1");
+        if (esf2 > esf1 && esf2 > esf3) System.out.println("La mas pesada es la esfera 2");
+        if (esf3 > esf1 && esf3 > esf2) System.out.println("La mas pesada es la esfera 3");
+    }
+}
